@@ -1,0 +1,306 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+.container {
+  background: asset-data-url('1.png');
+  background-size: cover;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 8% auto auto 8%;
+  grid-template-rows: 20% 85%;
+  grid-template-areas:
+      ". h h ."
+      ". c v .";
+}
+
+
+//HEADER Global
+header {
+  display: flex;
+  flex-direction: column;
+  grid-area: h;
+  // background-color: red;
+}
+
+  //uppernavbar
+  header .uppernavbar ul{
+    list-style: none;
+    text-align: right;
+  }
+
+  header .uppernavbar li{
+    display: inline-block;
+    // text-decoration: none;
+    font-size: 0.8em;
+    padding: 0.8%;
+  }
+
+  header .uppernavbar li a{
+    text-decoration: none;
+    color: white;
+  }
+
+  //lowernavbar
+  header .lowernavbar ul{
+    list-style: none;
+    text-align: left;
+  }
+
+  header .lowernavbar li{
+    display: inline-block;
+  }
+
+  .logo{
+    max-width: 130px;
+    max-height: 33px;
+  }
+
+  .lowernavbar ul{
+    display: flex;
+    align-items: center;
+  }
+
+  .rightlowernavbar{
+    margin-left: auto;
+
+  }
+
+
+
+  /* Dropdown Button */
+.dropbtn {
+   background-color: rgba(209, 3, 3, 0);
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+   // background-color: #3e8e41;
+}
+
+
+.content {
+  grid-area: c;
+  // background-color: blue;
+
+}
+
+.video {
+  grid-area: v;
+  // background-color: green;
+}
+
+
+
+
+
+
+
+
+// html, body {
+//   height: 100%;
+//   margin: 0;
+//   width: 100%;
+// }
+//
+// body {
+//   display: flex;
+//   flex-direction: column;
+//   font-family: arial,sans-serif;
+// }
+//
+// body > header,
+// body > section,
+// body > footer {
+//   min-width: 970px;
+// }
+//
+// body > header {
+//   height: 89px;
+// }
+//
+// body > header > span:last-child {
+//   float: right;
+//   font-size: 13px;
+//   padding-right: 30px;
+//   margin-top: 14px;
+//   min-width: 245px;
+// }
+//
+// body > header a,
+// body > header a:visited {
+//   color: #222;
+//   margin-left: 12px;
+//   text-decoration: none;
+// }
+//
+// body > header a:hover{
+//   text-decoration: underline;
+// }
+//
+// body > header button {
+//   font-family: arial, serif;
+//   font-size: 13px;
+//   margin: 0;
+//   outline: none;
+//   vertical-align: middle;
+// }
+//
+// body > header button#apps {
+//   background-color: #ffffff;
+//   border: none;
+//   padding-left: 11px;
+//   padding-right: 11px;
+//   padding-top: 1px;
+//   opacity: 0.5;
+// }
+//
+// body > header button#connexion {
+//   background-color: rgb(66, 133, 244);
+//   border: none;
+//   border-radius: 2px;
+//   color: #ffffff;
+//   font-weight: bold;
+//   padding-bottom: 7px;
+//   padding-left: 13px;
+//   padding-right: 13px;
+//   padding-top: 8px;
+// }
+//
+//
+// section#section_button,
+// section#panel {
+//   flex: 1;
+// }
+// section#section_button {
+//   display:block;
+//   text-align: center;
+// }
+//
+// section#panel {
+//   display:none;
+// }
+//
+// body > section div {
+//   text-align: center;
+// }
+//
+// div#logo > img {
+//   padding-bottom: 28px;
+//   padding-top: 109px;
+// }
+//
+// form input[name="search"] {
+//   background-color: white;
+//   border: none;
+//   box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+//   color: #222;
+//   font-family: arial, sans-serif;
+//   font-size: 16px;
+//   height: 34px;
+//   margin-bottom: 20px;
+//   margin-left: 10px;
+//   padding: 5px 20px;
+//   width: 542px;
+// }
+//
+// form input[name="search"]:focus,
+// form input[name="search"]:hover {
+//   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+// }
+//
+//
+// form button {
+//   background-color: rgb(248, 248, 248);
+//   border: solid 1px rgb(242, 242, 242);
+//   border-radius: 2px;
+//   color: rgb(117, 117, 117);
+//   cursor: default;
+//   font-family: arial, serif;
+//   font-size: 13px;
+//   font-weight: 700;
+//   height: 36px;
+//   margin: 11px 4px;
+//   min-width: 54px;
+//   padding: 0 16px;
+//   text-align: center;
+// }
+//
+// form button:hover {
+//   border: solid 1px rgb(198, 198, 198);
+//   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px;
+//   color: #222;
+// }
+//
+// body > footer {
+//   background-color: rgb(242, 242, 242);
+//   color: rgb(102, 102, 102);
+// }
+//
+// body > footer > div {
+//   border-top : solid 1px rgb(228, 228, 228);
+//   line-height: 40px;
+//   padding-left: 30px;
+// }
+//
+// body > footer > div:first-child > span {
+//   font-size: 15px;
+// }
+//
+// body > footer > div:last-child {
+//   font-size: 13px;
+// }
+//
+// body > footer > div:last-child > span:last-child {
+//   float: right;
+//   padding-right: 6px;
+// }
+//
+// body > footer > div:last-child a,
+// body > footer > div:last-child a:visited {
+//   color: rgb(102, 102, 102);
+//   padding-right: 23px;
+//   text-decoration: none;
+// }
+//
+// body > footer > div:last-child a:hover{
+//   text-decoration: underline;
+// }
